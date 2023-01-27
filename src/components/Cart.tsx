@@ -1,4 +1,4 @@
-import { Stack, Typography,Box } from "@mui/material";
+import { Stack, Typography,Box, Card, CardMedia } from "@mui/material";
 import { colorsApp } from "../App";
 
 interface Props {
@@ -15,14 +15,22 @@ export const Cart = ({colorKeys}: Props) => {
                 <Typography variant = 'h2' fontSize = '24px' fontWeight= '700' lineHeight= '24px'> Your Cart  <Box component = 'span' fontSize= '18px' color = {colorKeys.sectionMenuLettersColor} fontWeight = '400'> (3)</Box> </Typography>             
 
                 <Stack border= 'solid 1px blue' height = '96.21%' marginTop= '3.79%' >
-                    <Box>
-                        Item 1
+                    <Box height= '33.3%' border= 'solid 1px green' >
+
+                        <Stack width = '11.39%' border= 'solid 1px red' height = '100%' >
+                          <Box width = "120px" height = "120px" bgcolor={colorKeys.secondaryColor}>
+                            
+            
+
+                          </Box>
+                        </Stack>
                     </Box>
-                    <Box>
-                        Item 2
+            
+                    <Box height= '33.3%' border= 'solid 1px green'>
+                        
                     </Box>
-                    <Box>
-                        Item 3
+                    <Box height= '33.3%' border= 'solid 1px green'>
+                        
                     </Box>
 
                 </Stack>
