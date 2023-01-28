@@ -82,11 +82,11 @@ export const Header = ({ colorKeys }: Props) => {
               marginRight: "5.75vw",
             }}
           >
-            <Button disableRipple variant="text" startIcon={<PermIdentityOutlinedIcon />}  sx = {{textTransform: 'none' , color : `${colorKeys.principalColor}`, fontSize : '15px'} } >
+            <Button disableRipple variant="text" startIcon={<PermIdentityOutlinedIcon />}  sx = {{textTransform: 'none' , color : `${colorKeys.principalColor}`, fontSize : '15px'} } aria-label="Sign In">
               Sign In
             </Button>
 
-            <Button disableRipple variant="text" startIcon={<ShoppingBagOutlinedIcon />} sx = {{textTransform: 'none' , color : `${colorKeys.principalColor}` ,  fontSize : '15px'} }>
+            <Button disableRipple variant="text" startIcon={<ShoppingBagOutlinedIcon />} sx = {{textTransform: 'none' , color : `${colorKeys.principalColor}` ,  fontSize : '15px'} } aria-label="">
               Cart
             </Button>
 

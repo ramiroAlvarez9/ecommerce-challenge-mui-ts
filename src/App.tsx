@@ -22,7 +22,7 @@ function App() {
     },
   });
 
-
+  //pallete of colors
   const colorKeys : colorsApp= {
     principalColor: "#FFFFFF",
     secondaryColor: "#CED0D3",
