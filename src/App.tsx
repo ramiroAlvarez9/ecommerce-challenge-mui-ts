@@ -1,7 +1,8 @@
 import "./App.css";
 import { ThemeProvider, createTheme } from "@mui/material";
 import "@fontsource/open-sans";
-import "@fontsource/open-sans/700.css" 
+import "@fontsource/open-sans/600.css"
+import "@fontsource/open-sans/700.css"  
 import { Header } from "./components/Header";
 import { SectionMenu } from "./components/SectionMenu";
 import { Cart } from "./components/Cart";
