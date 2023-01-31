@@ -6,7 +6,7 @@ import "@fontsource/open-sans/700.css"
 import { Header } from "./components/Header";
 import { SectionMenu } from "./components/SectionMenu";
 import { Cart } from "./components/Cart";
-
+import { Interest } from "./components/Interest";
 
 export interface colorsApp {
   principalColor: string;
@@ -41,8 +41,8 @@ function App() {
         < SectionMenu colorKeys ={colorKeys} />
 
         < Cart        colorKeys ={colorKeys} />    
-      
 
+        <Interest     colorKeys ={colorKeys} />
 
       </ThemeProvider>
     </>
