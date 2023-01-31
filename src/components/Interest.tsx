@@ -14,7 +14,6 @@ export const Interest = ({ colorKeys }: Props) => {
       <Stack
         marginTop="80px"
         border="solid 1px red"
-        direction="row"
         width="88.5vw"
         height="22.44vh"
         marginLeft="5.75vw"
@@ -30,46 +29,58 @@ export const Interest = ({ colorKeys }: Props) => {
           You might also like
         </Typography>
 
-        <Stack
+        <Stack direction = 'row'> 
+        <Box
           border="solid 1px blue"
           marginLeft= '0px'
           marginTop="74px"
-          height="362px"
+          height="365px"
           width="336px"
+          marginRight= '24px'
         >
           1
-        </Stack>
-        <Stack
+
+
+
+
+
+
+
+
+          
+        </Box>
+        <Box
           border="solid 1px blue"
           marginLeft= '0px'
           marginTop="74px"
-          height="362px"
+          height="365px"
           width="336px"
+          marginRight= '24px'
         >
           2
-        </Stack>
-        <Stack
+        </Box>
+        <Box
           border="solid 1px blue"
           marginLeft= '0px'
           marginTop="74px"
-          height="362px"
+          height="365px"
           width="336px"
+          marginRight= '24px'
         >
           3
-        </Stack>
-        <Stack
+        </Box>
+        <Box
           border="solid 1px blue"
           marginLeft= '0px'
           marginTop="74px"
-          height="362px"
+          height="365px"
           width="336px"
         >
           4
+        </Box>
+
+
         </Stack>
-
-
-
-
       </Stack>
     </>
   );

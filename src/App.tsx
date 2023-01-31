@@ -7,6 +7,7 @@ import { Header } from "./components/Header";
 import { SectionMenu } from "./components/SectionMenu";
 import { Cart } from "./components/Cart";
 import { Interest } from "./components/Interest";
+import { WarningComponent } from "./components/WarningComponent";
 
 export interface colorsApp {
   principalColor: string;
@@ -15,6 +16,7 @@ export interface colorsApp {
   sectionMenuLettersColor : string;
 }
 
+  
 
 function App() {
   const theme = createTheme({
@@ -32,20 +34,33 @@ function App() {
   
   };
 
+  
+
   return (
-    <>
-      <ThemeProvider theme={theme}>
+  
+  <>
+      
+      {window.innerWidth === 1600 && window.innerHeight === 1963 ?  
+        <ThemeProvider theme={theme}>
+                
+          < Header      colorKeys ={colorKeys} />
         
-        < Header      colorKeys ={colorKeys} />
-
-        < SectionMenu colorKeys ={colorKeys} />
-
-        < Cart        colorKeys ={colorKeys} />    
-
-        <Interest     colorKeys ={colorKeys} />
-
-      </ThemeProvider>
+          < SectionMenu colorKeys ={colorKeys} />
+        
+          < Cart        colorKeys ={colorKeys} />    
+        
+          <Interest     colorKeys ={colorKeys} />
+        
+        </ThemeProvider>
+      :
+        
+      < WarningComponent />
+  
+    }
     </>
+  
+  
+  
   );
 }
 
