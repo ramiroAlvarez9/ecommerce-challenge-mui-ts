@@ -9,6 +9,7 @@ import { Header } from "./components/Header";
 import { SectionMenu } from "./components/SectionMenu";
 import { Cart } from "./components/Cart";
 import { Interest } from "./components/Interest";
+import { Footer } from "./components/Footer";
 import { WarningComponent } from "./components/WarningComponent";
 
 export interface colorsApp {
@@ -52,7 +53,13 @@ function App() {
           < Cart        colorKeys ={colorKeys} />    
         
           <Interest     colorKeys ={colorKeys} />
-        
+
+          <Footer 
+          
+            colorKeys = {colorKeys}
+            
+
+        />
         </ThemeProvider>
       :
         

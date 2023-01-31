@@ -52,8 +52,6 @@ export const InterestCard = ({ colorKeys, title, price, minimum }: Props) => {
           display='flex'
           justifyContent='space-between'
           alignItems='center'
-
-
         >
 
           <Typography variant='body2'
