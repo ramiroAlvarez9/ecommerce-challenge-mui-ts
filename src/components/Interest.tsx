@@ -1,10 +1,10 @@
-import { Stack, Typography, Box } from "@mui/material";
-import DeleteIcon from "@mui/icons-material/Delete";
-import { styled } from "@mui/material/styles";
-import { QuantityInput } from "./QuantityInput";
+import { Stack, Typography} from "@mui/material";
 import { colorsApp } from "../App";
+import { InterestCard } from "./InterestCard";
 
-interface Props {
+
+interface Props 
+{
   colorKeys: colorsApp;
 }
 
@@ -13,14 +13,13 @@ export const Interest = ({ colorKeys }: Props) => {
     <>
       <Stack
         marginTop="80px"
-        border="solid 1px red"
         width="88.5vw"
         height="22.44vh"
         marginLeft="5.75vw"
       >
         <Typography
           component="h2"
-          height= '0px'
+          height='0px'
           fontStyle="normal"
           fontWeight="700"
           fontSize="24px"
@@ -29,55 +28,34 @@ export const Interest = ({ colorKeys }: Props) => {
           You might also like
         </Typography>
 
-        <Stack direction = 'row'> 
-        <Box
-          border="solid 1px blue"
-          marginLeft= '0px'
-          marginTop="74px"
-          height="365px"
-          width="336px"
-          marginRight= '24px'
-        >
-          1
-
-
-
-
-
-
-
-
+        <Stack direction='row'>
           
-        </Box>
-        <Box
-          border="solid 1px blue"
-          marginLeft= '0px'
-          marginTop="74px"
-          height="365px"
-          width="336px"
-          marginRight= '24px'
-        >
-          2
-        </Box>
-        <Box
-          border="solid 1px blue"
-          marginLeft= '0px'
-          marginTop="74px"
-          height="365px"
-          width="336px"
-          marginRight= '24px'
-        >
-          3
-        </Box>
-        <Box
-          border="solid 1px blue"
-          marginLeft= '0px'
-          marginTop="74px"
-          height="365px"
-          width="336px"
-        >
-          4
-        </Box>
+        <InterestCard
+            colorKeys = {colorKeys}
+            title   = "Unisex Short Sleeve T-Shirt"
+            price   = "$10-24$"
+            minimum = "24"
+          />
+                  <InterestCard
+            colorKeys = {colorKeys}
+            title   = "Unisex Short Sleeve T-Shirt"
+            price   = "$10-24$"
+            minimum = "24"
+          />
+                  <InterestCard
+            colorKeys = {colorKeys}
+            title   = "Unisex Short Sleeve T-Shirt"
+            price   = "$10-24$"
+            minimum = "24"
+          />
+                  <InterestCard
+            colorKeys = {colorKeys}
+            title   = "Unisex Short Sleeve T-Shirt"
+            price   = "$10-24$"
+            minimum = "24"
+          />
+          
+
 
 
         </Stack>
