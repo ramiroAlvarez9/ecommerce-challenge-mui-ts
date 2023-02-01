@@ -31,7 +31,7 @@ function App() {
   //pallete of colors
   const colorKeys : colorsApp= {
     principalColor: "#FFFFFF",
-    secondaryColor: "#CED0D3",
+    secondaryColor: "#E6E8E9",
     contrastColor : "#091625",
     sectionMenuLettersColor : '#535C67',
   

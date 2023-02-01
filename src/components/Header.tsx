@@ -53,11 +53,13 @@ export const Header = ({ colorKeys }: Props) => {
               display="flex"
               justifyContent="center"
               alignItems="center"
-              bgcolor = {colorKeys.secondaryColor}
+              bgcolor = '#CED0D3'
               marginLeft="5.75vw"
               border = '0'
             >
               <Typography variant="body1" color = '#848A92' >LOGO</Typography>
+           
+           
             </Box>
 
             <SearchBar

@@ -5,7 +5,7 @@ import {
   List,
   ListItem,
   ButtonGroup,
-  Button
+  Button,
 } from "@mui/material";
 import { colorsApp } from "../App";
 import { styled } from "@mui/system";
@@ -13,9 +13,8 @@ import { QuantityInput } from "./QuantityInput";
 
 interface Props {
   colorKeys: colorsApp;
-  quantity : number[];
+  quantity: number[];
 }
-
 
 export const ProductPack = ({ colorKeys, quantity }: Props) => {
   return (
@@ -68,7 +67,7 @@ export const ProductPack = ({ colorKeys, quantity }: Props) => {
             My Christmas pack
           </Typography>
           <Typography variant="body2" fontSize="16px" fontWeight="600">
-            <QuantityInput quantity= {quantity} marginTop="" />
+            <QuantityInput quantity={quantity} marginTop="" />
           </Typography>
 
           <List
